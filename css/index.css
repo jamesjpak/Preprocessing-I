@@ -136,10 +136,15 @@ body {
   background-color: white;
 }
 header nav {
+  background-color: lightblue;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 header nav a {
   padding: 20px;
+}
+.profile-pic {
+  display: flex;
+  justify-content: center;
 }
