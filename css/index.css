@@ -144,7 +144,18 @@ header nav {
 header nav a {
   padding: 20px;
 }
-.profile-pic {
+.container {
+  margin: 20px;
+  font-family: Arial;
+}
+.container .profile-pic {
+  padding: 20px;
+  width: 150px;
+  height: 400px;
   display: flex;
   justify-content: center;
+}
+.container h1 {
+  font-size: 30px;
+  padding: 20x;
 }
