@@ -168,3 +168,15 @@ header nav a {
 .container .about-me {
   width: 49%;
 }
+.container .introduction {
+  padding: 20px;
+}
+.container .skills {
+  padding: 20px;
+}
+.container .history {
+  padding: 20px;
+}
+.container .center-footer {
+  text-align: center;
+}
