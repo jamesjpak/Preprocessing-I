@@ -179,4 +179,14 @@ header nav a {
 }
 .container .center-footer {
   text-align: center;
+  padding: 20px;
+}
+.container .middle-content {
+  background-color: lightgrey;
+}
+.container .past {
+  text-align: left;
+}
+.container .contact-me {
+  padding: 20px;
 }
