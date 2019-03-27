@@ -148,6 +148,10 @@ header nav a {
   margin: 20px;
   font-family: Arial;
 }
+.container {
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
 .container .profile-pic {
   padding: 20px;
   width: 150px;
