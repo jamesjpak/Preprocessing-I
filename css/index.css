@@ -159,7 +159,12 @@ header nav a {
   display: flex;
   justify-content: center;
 }
-.container h1 {
+.container h1,
+.container h2,
+.container h3 {
   font-size: 30px;
   padding: 20x;
+}
+.container .about-me {
+  width: 49%;
 }
