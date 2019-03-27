@@ -133,5 +133,13 @@ table {
 html,
 body {
   height: 100%;
-  background-color: red;
+  background-color: white;
+}
+header nav {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  padding: 20px;
 }
