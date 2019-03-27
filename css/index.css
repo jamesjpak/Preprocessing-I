@@ -127,30 +127,26 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
+.container {
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container * {
   box-sizing: border-box;
 }
-html,
-body {
+.container html,
+.container body {
   height: 100%;
   background-color: white;
 }
-header nav {
+.container header nav {
   background-color: lightblue;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
-header nav a {
+.container header nav a {
   padding: 20px;
-}
-.container {
-  margin: 20px;
-  font-family: Arial;
-}
-.container {
-  margin: 20px;
-  font-family: 'Montserrat', sans-serif;
 }
 .container .profile-pic {
   padding: 20px;
@@ -184,9 +180,25 @@ header nav a {
 .container .middle-content {
   background-color: lightgrey;
 }
+@media (max-width: 500px) {
+  .container .middle-content {
+    width: 90%;
+    flex-direction: column;
+  }
+}
 .container .past {
   text-align: left;
 }
 .container .contact-me {
   padding: 20px;
+}
+.container .contact-me p {
+  padding: 10px;
+}
+.container .contact-me a {
+  padding: 10px;
+}
+.container th {
+  text-decoration: underline;
+  margin-top: 10px;
 }

@@ -49,33 +49,10 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
 
-html, body {
-	height: 100%;
-	background-color: white;
-}
-
-
-header nav {
-	background-color: lightblue;
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-}
-
-header nav a {
-	padding: 20px;
-}
-
-.container {
-	margin: 20px;
-	font-family: Arial; 
-}
 
 @special-font-headers: 'Montserrat', sans-serif;
+@special-color: #6BE752;
 
 .container {
 	margin: 20px;
@@ -83,6 +60,27 @@ header nav a {
 }
 
 .container {
+	* {
+		box-sizing: border-box;
+	}
+	
+	html, body {
+		height: 100%;
+		background-color: white;
+	}
+	
+	
+	header nav {
+		@special-color;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	header nav a {
+		padding: 20px;
+	}
+
 	.profile-pic {
 		padding: 20px;
 		width: 150px;
@@ -90,6 +88,7 @@ header nav a {
 		display: flex;
 		justify-content: center;
 	}
+
 
 	h1, h2, h3 {
 		font-size: 30px;
@@ -99,6 +98,7 @@ header nav a {
 	.about-me {
 		width: 49%
 	}
+
 
 	.introduction {
 		padding: 20px;
@@ -110,6 +110,7 @@ header nav a {
 
 	.history {
 		padding: 20px;
+
 	}
 
 	.center-footer {
@@ -119,14 +120,34 @@ header nav a {
 
 	.middle-content {
 		background-color: lightgrey;
+
+		@media (max-width: 500px) {
+			width: 90%;
+			flex-direction: column;
+		}
 	}
 
 	.past {
 		text-align: left;
 	}
 
+
 	.contact-me {
 		padding: 20px;
 	}
 
+	.contact-me p {
+		padding: 10px;
+	}
+
+	.contact-me a {
+		padding: 10px;
+	}
+
+	th {
+		text-decoration: underline;
+		margin-top: 10px;
+	}
+
 }
+
