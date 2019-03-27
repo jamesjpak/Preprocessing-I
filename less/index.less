@@ -52,7 +52,7 @@ table {
 
 
 @special-font-headers: 'Montserrat', sans-serif;
-@special-color: #6BE752;
+@special-color: #729BFF;
 
 .container {
 	margin: 20px;
@@ -71,7 +71,7 @@ table {
 	
 	
 	header nav {
-		@special-color;
+		background-color: @special-color;
 		padding: 20px;
 		display: flex;
 		justify-content: center;
@@ -96,12 +96,15 @@ table {
 	}
 
 	.about-me {
-		width: 49%
+		display: flex;
+		flex-direction: row;
 	}
+
 
 
 	.introduction {
 		padding: 20px;
+		width: 49%;
 	}
 
 	.skills {
