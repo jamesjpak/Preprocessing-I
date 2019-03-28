@@ -49,11 +49,111 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+
+@special-font-headers: 'Montserrat', sans-serif;
+@special-color: #729BFF;
+
+.container {
+	margin: 20px;
+	font-family: @special-font-headers; 
+}
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+//start nesting at each section
+
+
+header {
+	nav {
+		background-color: @special-color;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		a {
+			padding: 20px;
+		}
+	}
+}
+	
+
+	.profile-pic {
+		padding: 20px;
+		width: 150px;
+		height: 400px;
+		display: flex;
+		margin-left: 300px;
+	}
+
+
+	h1, h2, h3 {
+		font-size: 30px;
+		padding: 20x;
+	}
+
+	.about-me {
+		display: flex;
+		flex-direction: row;
+	}
+
+	
+
+	.introduction {
+		padding: 20px;
+		width: 49%;
+	}
+
+	.skills {
+		padding: 20px;
+	}
+
+	.history {
+		padding: 20px;
+
+	}
+
+	.center-footer {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.middle-content {
+		background-color: lightgrey;
+
+		@media (max-width: 500px) {
+			width: 90%;
+			flex-direction: column;
+		}
+	}
+
+	.past {
+		text-align: left;
+	}
+
+
+	.contact-me {
+		padding: 20px;
+	}
+
+	.contact-me p {
+		padding: 10px;
+	}
+
+	.contact-me a {
+		padding: 10px;
+	}
+
+	th {
+		text-decoration: underline;
+		margin-top: 10px;
+	}
+
 }
 
