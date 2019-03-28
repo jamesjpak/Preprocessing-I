@@ -59,34 +59,37 @@ table {
 	font-family: @special-font-headers; 
 }
 
-.container {
-	* {
-		box-sizing: border-box;
-	}
-	
-	html, body {
-		height: 100%;
-		background-color: white;
-	}
-	
-	
-	header nav {
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	background-color: white;
+}
+
+//start nesting at each section
+
+
+header {
+	nav {
 		background-color: @special-color;
 		padding: 20px;
 		display: flex;
 		justify-content: center;
+		a {
+			padding: 20px;
+		}
 	}
+}
 	
-	header nav a {
-		padding: 20px;
-	}
 
 	.profile-pic {
 		padding: 20px;
 		width: 150px;
 		height: 400px;
 		display: flex;
-		justify-content: center;
+		margin-left: 300px;
 	}
 
 
@@ -100,7 +103,7 @@ table {
 		flex-direction: row;
 	}
 
-
+	
 
 	.introduction {
 		padding: 20px;

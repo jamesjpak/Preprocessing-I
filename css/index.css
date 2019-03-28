@@ -148,13 +148,7 @@ table {
 .container header nav a {
   padding: 20px;
 }
-.container .profile-pic {
-  padding: 20px;
-  width: 150px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-}
+
 .container h1,
 .container h2,
 .container h3 {
